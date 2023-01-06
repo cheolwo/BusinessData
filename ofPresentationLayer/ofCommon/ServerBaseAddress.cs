@@ -1,0 +1,4 @@
+﻿namespace BusinessView.ofCommon
+{
+ 
+}

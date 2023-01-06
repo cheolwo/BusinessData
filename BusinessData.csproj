@@ -1,0 +1,293 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\BusinessUserDb\**" />
+    <Compile Remove="Migrations\FisheriesDb\**" />
+    <Compile Remove="Migrations\GODb\**" />
+    <Compile Remove="Migrations\HsDb\**" />
+    <Compile Remove="Migrations\KamisDb\**" />
+    <Compile Remove="Migrations\KAptDb\**" />
+    <Compile Remove="Migrations\OrderDb\**" />
+    <Compile Remove="Migrations\SmartFarmDb\**" />
+    <Compile Remove="Migrations\WarehouseDb\**" />
+    <Compile Remove="ofDataAccessLayer\ofCommon\ofFactory\**" />
+    <Compile Remove="ofDataAccessLayer\ofGeneric\ofStorage\**" />
+    <Compile Remove="ofDataAccessLayer\ofHRMarket\Migrations\**" />
+    <Compile Remove="ofDataAccessLayer\ofHRMarket\ofInterface\**" />
+    <Compile Remove="ofDataAccessLayer\ofJournal\Configuration\**" />
+    <Compile Remove="ofDataAccessLayer\ofJournal\Migrations\**" />
+    <Compile Remove="ofDataAccessLayer\ofMarket\DataManager\**" />
+    <Compile Remove="ofDataAccessLayer\ofMarket\Migrations\**" />
+    <Compile Remove="ofDataAccessLayer\ofTrade\Migrations\**" />
+    <Compile Remove="ofDataAccessLayer\ofWarehouse\DataManager\**" />
+    <EmbeddedResource Remove="Migrations\BusinessUserDb\**" />
+    <EmbeddedResource Remove="Migrations\FisheriesDb\**" />
+    <EmbeddedResource Remove="Migrations\GODb\**" />
+    <EmbeddedResource Remove="Migrations\HsDb\**" />
+    <EmbeddedResource Remove="Migrations\KamisDb\**" />
+    <EmbeddedResource Remove="Migrations\KAptDb\**" />
+    <EmbeddedResource Remove="Migrations\OrderDb\**" />
+    <EmbeddedResource Remove="Migrations\SmartFarmDb\**" />
+    <EmbeddedResource Remove="Migrations\WarehouseDb\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofCommon\ofFactory\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofGeneric\ofStorage\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofHRMarket\Migrations\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofHRMarket\ofInterface\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofJournal\Configuration\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofJournal\Migrations\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofMarket\DataManager\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofMarket\Migrations\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofTrade\Migrations\**" />
+    <EmbeddedResource Remove="ofDataAccessLayer\ofWarehouse\DataManager\**" />
+    <None Remove="Migrations\BusinessUserDb\**" />
+    <None Remove="Migrations\FisheriesDb\**" />
+    <None Remove="Migrations\GODb\**" />
+    <None Remove="Migrations\HsDb\**" />
+    <None Remove="Migrations\KamisDb\**" />
+    <None Remove="Migrations\KAptDb\**" />
+    <None Remove="Migrations\OrderDb\**" />
+    <None Remove="Migrations\SmartFarmDb\**" />
+    <None Remove="Migrations\WarehouseDb\**" />
+    <None Remove="ofDataAccessLayer\ofCommon\ofFactory\**" />
+    <None Remove="ofDataAccessLayer\ofGeneric\ofStorage\**" />
+    <None Remove="ofDataAccessLayer\ofHRMarket\Migrations\**" />
+    <None Remove="ofDataAccessLayer\ofHRMarket\ofInterface\**" />
+    <None Remove="ofDataAccessLayer\ofJournal\Configuration\**" />
+    <None Remove="ofDataAccessLayer\ofJournal\Migrations\**" />
+    <None Remove="ofDataAccessLayer\ofMarket\DataManager\**" />
+    <None Remove="ofDataAccessLayer\ofMarket\Migrations\**" />
+    <None Remove="ofDataAccessLayer\ofTrade\Migrations\**" />
+    <None Remove="ofDataAccessLayer\ofWarehouse\DataManager\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>9</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>00020813-0000-0000-c000-000000000046</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.10.0" />
+    <PackageReference Include="FluentValidation" Version="11.0.1" />
+    <PackageReference Include="Flurl" Version="3.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="6.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NMemory" Version="3.1.4" />
+    <PackageReference Include="Popbill" Version="1.14.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
+    <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="ofDataAccessLayer\ofDataStructure\ofTree\" />
+    <Folder Include="ofDataAccessLayer\ofGeneric\ofRepository\ofExtentions\" />
+    <Folder Include="ofDataAccessLayer\ofWarehouse\Migrations\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofCommon\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofGroupOrder\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofHR\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofJournal\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofMarket\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofOrder\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofProduct\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofTrade\" />
+    <Folder Include="ofDataAccessLayer\ofEntityDTORepository\ofWarehouse\" />
+    <Folder Include="ofExternalLayer\ofGroupOrder\" />
+    <Folder Include="ofExternalLayer\ofHR\" />
+    <Folder Include="ofExternalLayer\ofJournal\" />
+    <Folder Include="ofExternalLayer\ofMarket\" />
+    <Folder Include="ofExternalLayer\ofOrder\" />
+    <Folder Include="ofExternalLayer\ofProduct\" />
+    <Folder Include="ofExternalLayer\ofTrade\" />
+    <Folder Include="ofExternalLayer\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofActorContext\ofExtensions\" />
+    <Folder Include="ofPresentationLayer\ofActorContext\ofViewModel\" />
+    <Folder Include="ofPresentationLayer\ofStorage\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewContext\ofBusinessRelationUser\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewContext\ofBusinessUser\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewContext\ofUser\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofForwarder\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofLogister\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofOrderer\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofProducter\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployee\ofSeller\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofForwarder\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofLogister\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofOrderer\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofProducter\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofEmployer\ofSeller\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofForwarder\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofLogister\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofOrderer\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofProducter\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessRelationUser\ofPlatform\ofSeller\ofWarehouse\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofForwarder\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofForwarder\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofForwarder\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofForwarder\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofForwarder\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofForwarder\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofForwarder\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofLogister\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofLogister\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofLogister\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofLogister\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofLogister\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofLogister\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofLogister\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofOrderer\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofOrderer\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofOrderer\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofOrderer\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofOrderer\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofOrderer\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofOrderer\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofProducter\ofGroupOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofProducter\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofProducter\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofProducter\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofProducter\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofProducter\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofProducter\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofSeller\ofTrade\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofSeller\ofProduct\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofSeller\ofOrder\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofSeller\ofMarket\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofSeller\ofJournal\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofSeller\ofHR\" />
+    <Folder Include="ofPresentationLayer\ofView\ofViewModels\ofBusinessUser\ofSeller\ofGroupOrder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+</Project>
